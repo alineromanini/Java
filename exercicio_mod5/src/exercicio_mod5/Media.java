@@ -8,7 +8,7 @@ public class Media {
 		
 		Scanner leia = new Scanner(System.in);
 		
-		//Variaveis para as notas 
+		//Variáveis para as notas 
 		
 		float nota1, nota2, nota3, nota4;
 		
@@ -27,6 +27,7 @@ public class Media {
 		nota4 = leia.nextFloat();
 		
 		//Calcula a média final do aluno
+		
 		System.out.printf("A média final é: %.1f", (nota1 + nota2 + nota3 + nota4)/4);
 		
 		leia.close(); 
