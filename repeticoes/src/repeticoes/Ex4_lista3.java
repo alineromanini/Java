@@ -11,8 +11,8 @@ public class Ex4_lista3 {
 		int idade, idGenero, pessoaDev, totalRespostas = 0, backend = 0, mulheresFront = 0, homensMob = 0;
 		int naoBinarFull = 0;
 		String continua = "S";
-		long somaIdades = 0;
-		double mediaIdades = 0;
+		float somaIdades = 0;
+		float mediaIdades = 0;
 
 		while (continua.equalsIgnoreCase("S")) {
 
@@ -46,7 +46,7 @@ public class Ex4_lista3 {
 			}
 
 			// Total de homens Cis e Trans desenvolvedores Mobile maiores de 40 anos
-			if (pessoaDev == 3 && idGenero == 2 && idGenero == 5 && idade > 40) {
+			if (pessoaDev == 3 && (idGenero == 2 || idGenero == 5) && idade > 40) {
 				homensMob++;
 			}
 
@@ -64,8 +64,8 @@ public class Ex4_lista3 {
 			leia.skip("\\R"); // ignora o \n ou o enter do buffer
 			continua = leia.nextLine().toUpperCase();
 		}
-		// Média da idade das pessoas que respoderam à pesquisa
-		mediaIdades = somaIdades / totalRespostas;
+		// Média da idade das pessoas que responderam à pesquisa
+		mediaIdades = (somaIdades / totalRespostas);
 
 		System.out.printf("Total de pessoas desenvolvedoras Backend: %d%n%n", backend);
 		System.out.printf("Total de mulheres Cis e Trans desenvolvedoras Frontend: %d%n%n", mulheresFront);
