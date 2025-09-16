@@ -6,7 +6,7 @@ public class Variaveis {
 
 	public static void main(String[] args) {
 		
-		Scanner leia = new Scanner(System.in); //leia é o objeto da classe pra ler o que o usuário digitar
+		Scanner leia = new Scanner(System.in); //leia é o objeto da classe Scanner pra ler o que o usuário digitar
 		
 		System.out.println("Digite o peso: ");
 		int peso = leia.nextInt();

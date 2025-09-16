@@ -28,7 +28,7 @@ public class Notas {
 		
 		if(media >=7) {
 			System.out.println("Aluno foi aprovado!");
-		}else if (media >=5 && media < 7) {
+		} else if (media >=5 && media < 7) {
 			System.out.println("Aluno em recuperação!");
 		} else {
 			System.out.println("Aluno reprovado!");
